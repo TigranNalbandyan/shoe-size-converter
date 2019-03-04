@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>Shoe SizeChart</title>
+<meta charset='UTF-8'>
+	<meta nmae='viewport' content='width=device-width,
+	initial-scale=1.0'>
+	<meta http-equiv='X-UA-Compatible' content='ie=edge'>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <h1 class="display-5 text-center mb-3">Men Shoe-Size Converter</h1>
+      <form>
+        <div class="form-group">
+          <input id="lbsInput" type="text" class="form-control form-control-lg" placeholder="Enter size here ...">
+        </div>
+      </form>
+      <div id="output">
+        <div class="p-3 mb-2 bg-success text-white">
+          <div class="card-block">
+            <h4>US:</h4>
+            <h3 id="usOutput"></h3>
+          </div>
+        </div>
+
+        <div class="p-3 mb-2 bg-primary text-white">
+          <div class="card-block">
+            <h4>CM:</h4>
+            <h3 id="cmOutput"></h3>
+          </div>
+        </div>
+
+        <div class="p-3 mb-2 bg-warning text-white">
+          <div class="card-block">
+            <h4>UK:</h4>
+            <h3 id="euOutput"></h3>
+          </div>
+        </div>
+
+<h1 class="display-5 text-center mb-3" id='wm'>Women Shoe-Size Converter</h1>
+        
+        <div class="p-3 mb-2 bg-success text-white">
+          <div class="card-block">
+            <h4>US:</h4>
+            <h3 id="uswOutput"></h3>
+          </div>
+        </div>
+
+        <div class="p-3 mb-2 bg-primary text-white">
+          <div class="card-block">
+            <h4>CM:</h4>
+            <h3 id="cmwOutput"></h3>
+          </div>
+        </div>
+
+        <div class="p-3 mb-2 bg-warning text-white">
+          <div class="card-block">
+            <h4>UK:</h4>
+            <h3 id="ukwOutput"></h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+var usSize=document.getElementById('usOutput');
+let cmSize=document.getElementById('cmOutput');
+let ukSize=document.getElementById('euOutput');
+
+var uswSize=document.getElementById('uswOutput');
+let cmwSize=document.getElementById('cmwOutput');
+let ukwSize=document.getElementById('ukwOutput');
+
+document.getElementById('lbsInput').addEventListener('keyup',function(e){
+let euSize=e.target.value;
+
+
+
+
+
+if(euSize==39){ usSize.innerHTML=6}
+	else if(euSize==39.5){usSize.innerHTML=6.5}
+		else if(euSize==40){usSize.innerHTML=7}
+			else if(euSize==40.5){usSize.innerHTML=7.5}
+				else if(euSize==41){usSize.innerHTML=8}
+					else if(euSize==41.5){usSize.innerHTML=8.5}
+						else if(euSize==42){usSize.innerHTML=9}
+							else if(euSize==42.5){usSize.innerHTML=9.5}
+								else if(euSize==43){usSize.innerHTML=10}
+									else if(euSize==43.5){usSize.innerHTML=10.5}
+										else if(euSize==44){usSize.innerHTML=11}
+											else if(euSize==44.5){usSize.innerHTML=11.5}
+												else if(euSize==45){usSize.innerHTML=12}
+													else if(euSize==46){usSize.innerHTML=13};
+
+	if(euSize==39){cmSize.innerHTML=23.5}
+		else if(euSize==39.5){cmSize.innerHTML=24.1}
+			else if(euSize==40){cmSize.innerHTML=24.4}
+				else if(euSize==40.5){cmSize.innerHTML=24.8}
+					else if(euSize==41){cmSize.innerHTML=25.4}
+						else if(euSize==41.5){cmSize.innerHTML=25.7}
+							else if(euSize==42){cmSize.innerHTML=26}
+								else if(euSize==42.5){cmSize.innerHTML=26.7}
+									else if(euSize==43){cmSize.innerHTML=27}
+										else if(euSize==43.5){cmSize.innerHTML=27.3}
+											else if(euSize==44){cmSize.innerHTML=27.9}
+												else if(euSize==44.5){cmSize.innerHTML=28.3}
+													else if(euSize==45){cmSize.innerHTML=28.6};
+	if(euSize==39){ukSize.innerHTML=5.5}
+		else if(euSize==39.5){ukSize.innerHTML=6}
+			else if(euSize==40){ukSize.innerHTML=6.5}
+				else if(euSize==40.5){ukSize.innerHTML=7}
+					else if(euSize==41){ukSize.innerHTML=7.5}
+						else if(euSize==41.5){ukSize.innerHTML=8}
+							else if(euSize==42){ukSize.innerHTML=8.5}
+								else if(euSize==42.5){ukSize.innerHTML=9}
+									else if(euSize==43){ukSize.innerHTML=9.5}
+										else if(euSize==43.5){ukSize.innerHTML=10}
+											else if(euSize==44){ukSize.innerHTML=10.5}
+												else if(euSize==44.5){ukSize.innerHTML=11}
+													else if(euSize==45){ukSize.innerHTML=11.5};
+
+
+if(euSize==36){ uswSize.innerHTML=5.5}
+	else if(euSize==36.5){uswSize.innerHTML=6}
+		else if(euSize==37){uswSize.innerHTML=6.5}
+			else if(euSize==37.5){uswSize.innerHTML=7}
+				else if(euSize==38){uswSize.innerHTML=7.5}
+					else if(euSize==38.5){uswSize.innerHTML=8}
+						else if(euSize==39){uswSize.innerHTML=8.5}
+							else if(euSize==39.5){uswSize.innerHTML=9}
+								else if(euSize==40){uswSize.innerHTML=9.5}
+									else if(euSize==40.5){uswSize.innerHTML=10}
+										else if(euSize==41){uswSize.innerHTML=10.5}
+											else if(euSize==41.5){uswSize.innerHTML=11}
+												else if(euSize==42){uswSize.innerHTML=11.5}
+													else if(euSize==42.5){uswSize.innerHTML=12}
+														else if(euSize==43){uswSize.innerHTML=12.5}
+	
+if(euSize==36){cmwSize.innerHTML=22.2}
+	else if(euSize==36.5){cmwSize.innerHTML=22.5}
+		else if(euSize==37){cmwSize.innerHTML=23}
+			else if(euSize==37.5){cmwSize.innerHTML=23.5}
+				else if(euSize==38){cmwSize.innerHTML=23.8}
+					else if(euSize==38.5){cmwSize.innerHTML=24.1}
+						else if(euSize==39){cmwSize.innerHTML=24.6}
+							else if(euSize==39.5){cmwSize.innerHTML=25.1}
+								else if(euSize==40){cmwSize.innerHTML=25.4}
+									else if(euSize==40.5){cmwSize.innerHTML=25.9}
+										else if(euSize==41){cmwSize.innerHTML=26.2}
+											else if(euSize==41.5){cmwSize.innerHTML=26.7}
+												else if(euSize==42){cmwSize.innerHTML=27.1}
+													else if(euSize==42.5){cmwSize.innerHTML=27.6}
+														else if(euSize==43){cmwSize.innerHTML=22.9};
+ 
+
+ if(euSize==36){ukwSize.innerHTML=3.5}
+	else if(euSize==36.5){ukwSize.innerHTML=4}
+		else if(euSize==37){ukwSize.innerHTML=4.5}
+			else if(euSize==37.5){ukwSize.innerHTML=5}
+				else if(euSize==38){ukwSize.innerHTML=5.5}
+					else if(euSize==38.5){ukwSize.innerHTML=6}
+
+                      else if(euSize==39){ukwSize.innerHTML=6.5}
+		                else if(euSize==39.5){ukwSize.innerHTML=7}
+			              else if(euSize==40){ukwSize.innerHTML=7.5}
+				            else if(euSize==40.5){ukwSize.innerHTML=8}
+					          else if(euSize==41){ukwSize.innerHTML=8.5}
+						        else if(euSize==41.5){ukwSize.innerHTML=9}
+							      else if(euSize==42){ukwSize.innerHTML=9.5}
+								    else if(euSize==42.5){ukwSize.innerHTML=10}
+									 else if(euSize==43){ukwSize.innerHTML=10.5}
+										
+													
+												
+		
+
+
+})
+
+</script>
+
+</body>
+</html>
